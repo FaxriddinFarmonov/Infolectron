@@ -1,0 +1,23 @@
+# Environment variables
+.env
+.env.*
+
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.log
+
+venv/
+env/
+.venv/
+
+db.sqlite3
+media/
+staticfiles/
+
+.vscode/
+.idea/
+
+.DS_Store
+Thumbs.db

@@ -5,7 +5,7 @@ from celery.schedules import crontab
 
 # --------------------------------------------------
 # BASE
-# --------------------------------------------------
+# --------------------------------------------------g
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 SECRET_KEY = "django-insecure-abc123!@#def456$%^ghi789"

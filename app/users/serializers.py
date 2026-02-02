@@ -12,7 +12,7 @@ class RegisterSerializer(serializers.ModelSerializer):
             "first_name",
             "last_name",
             "group",
-            "email",
+            "username",
             "password",
             "confirm_password",
         )
@@ -26,7 +26,7 @@ class RegisterSerializer(serializers.ModelSerializer):
         validated_data.pop("confirm_password")
 
         user = User.objects.create_user(
-            email=validated_data["email"],
+            username=validated_data["username"],
             password=validated_data["password"],
             first_name=validated_data["first_name"],
             last_name=validated_data["last_name"],
@@ -36,5 +36,5 @@ class RegisterSerializer(serializers.ModelSerializer):
 
 
 class LoginSerializer(serializers.Serializer):
-    email = serializers.EmailField()
+    username = serializers.EmailField()
     password = serializers.CharField()

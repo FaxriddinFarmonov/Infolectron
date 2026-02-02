@@ -5,9 +5,9 @@ from django.contrib.auth import authenticate
 class AuthService:
 
     @staticmethod
-    def login(email: str, password: str) -> dict:
+    def login(username: str, password: str) -> dict:
         user = authenticate(
-            email=email,
+            username=username,
             password=password
         )
 

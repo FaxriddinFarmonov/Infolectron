@@ -29,7 +29,8 @@ class LoginView(APIView):
         serializer.is_valid(raise_exception=True)
 
         tokens = AuthService.login(
-            username=serializer.validated_data["username"],
+            username=serializer.validated_data["username "
+                                               ""],
             password=serializer.validated_data["password"],
         )
 

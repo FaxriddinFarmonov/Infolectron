@@ -114,7 +114,6 @@ CELERY_TASK_SERIALIZER = "json"
 
 CELERY_RESULT_BACKEND = "django-db"
 
-# 🔥 AUTOMATIC TASKS (10–20 daqiqa)
 CELERY_BEAT_SCHEDULE = {
     "global-subject-analytics-every-3-min": {
         "task": "app.results.tasks.calculate_global_subject_analytics",

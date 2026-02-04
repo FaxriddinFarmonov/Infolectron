@@ -29,13 +29,11 @@ class LoginView(APIView):
         serializer.is_valid(raise_exception=True)
 
         tokens = AuthService.login(
-            username=serializer.validated_data["username "
-                                               ""],
+            username=serializer.validated_data["username"],
             password=serializer.validated_data["password"],
         )
 
         return Response(tokens, status=status.HTTP_200_OK)
-
 
 class LogoutView(APIView):
 

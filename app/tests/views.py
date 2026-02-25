@@ -2,6 +2,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from rest_framework import status
+from app.tests.models import Test, Question
 
 from app.tests.selectors import get_test_questions_selector
 from app.tests.services import TestSessionService, TestResultService
@@ -10,7 +11,6 @@ from app.tests.serializers import (
     AnswerSerializer,
     FinishTestSerializer,
 )
-from app.tests.models import Test, Question
 from app.results.models import TestResult
 
 

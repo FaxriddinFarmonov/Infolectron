@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     "app.tests",
     "app.games",
     "app.results",
+    "app.kdb_simulyator"
 ]
 
 # --------------------------------------------------

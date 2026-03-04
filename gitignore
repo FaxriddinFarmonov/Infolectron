@@ -20,3 +20,38 @@ staticfiles/
 
 .DS_Store
 Thumbs.db
+# Python virtual environments
+venv/
+env/
+venv310/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.log
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.*
+
+# Media / Static files
+media/
+staticfiles/
+
+# Google / secret keys
+*.json
+
+# OCR / external libraries
+tesseract/
+poppler/

@@ -9,6 +9,8 @@ urlpatterns = [
     path('api/lessons/', include('app.lessons.urls')),
     path('api/tests/', include('app.tests.urls')),
     path('api/results/', include('app.results.urls')),
+    path("api/kdb/", include("app.kdb_simulyator.urls")),
+
     # path('api/games/', include('app.games.urls')),
-    # hali yo‘q bo‘lsa komment qilinadi
+
 ]
